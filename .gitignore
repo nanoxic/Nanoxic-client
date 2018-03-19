@@ -1,0 +1,7 @@
+/build/
+/target/
+/.settings/
+.classpath
+.project
+/src/main/java/Todo.java
+/src/test/resources/application.properties
