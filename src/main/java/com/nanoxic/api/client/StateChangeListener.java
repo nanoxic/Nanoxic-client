@@ -15,4 +15,8 @@ public abstract class StateChangeListener {
 	public void setStateMonitoringThread(StateMonitoringThread stateMonitoringThread) {
 		this.stateMonitoringThread = stateMonitoringThread;
 	}
+	
+	public void stopStateMonitoringThread() {
+		stateMonitoringThread.stop();
+	}
 }
