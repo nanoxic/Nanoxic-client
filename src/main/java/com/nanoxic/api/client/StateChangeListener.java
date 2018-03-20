@@ -2,7 +2,7 @@ package com.nanoxic.api.client;
 
 import com.nanoxic.api.client.Nanoxic.State;
 
-abstract class StateChangeListener {
+public abstract class StateChangeListener {
 
 	private StateMonitoringThread stateMonitoringThread;
 

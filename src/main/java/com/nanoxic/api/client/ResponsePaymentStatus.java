@@ -2,7 +2,7 @@ package com.nanoxic.api.client;
 
 import com.nanoxic.api.client.Nanoxic.State;
 
-class ResponsePaymentStatus extends ResponseMessage {
+public class ResponsePaymentStatus extends ResponseMessage {
 
 	private State state;
 	private boolean success;

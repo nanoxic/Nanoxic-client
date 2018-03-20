@@ -2,7 +2,7 @@ package com.nanoxic.api.client;
 
 import java.math.BigDecimal;
 
-class ResponseStartPayement extends ResponseMessage {
+public class ResponseStartPayement extends ResponseMessage {
 
 	private String address;
 	private BigDecimal amount;
