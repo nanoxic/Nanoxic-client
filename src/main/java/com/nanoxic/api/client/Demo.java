@@ -16,21 +16,11 @@ public class Demo {
 		System.out.println(responseStartPayement.getAddress());
 		System.out.println(responseStartPayement.getAmount());
 
-		// pmbkR5az jnegJYdw
-
-		// Nanoxic.monitorPayment(responseStartPayement.getPaymentId());// , timeout);
-		// // returns listener
-
 		StateChangeListener stateChangeListener = new MyStateChangeListener();
 		Nanoxic.addStatusChangeListener(responseStartPayement.getPaymentId(), stateChangeListener);
 
 		boolean success = Nanoxic.waitForStatusChange(responseStartPayement.getPaymentId(), State.ERROR, 180L);
 		System.out.println(success);
-
-		// String state =
-		// Nanoxic.waitForStatusChange(responseStartPayement.getPaymentId(), 180L);
-		// System.out.println(state);
-		// System.out.println("end");
 
 	}
 
